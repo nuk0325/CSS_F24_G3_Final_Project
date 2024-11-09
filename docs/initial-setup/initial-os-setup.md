@@ -34,7 +34,7 @@
      	-  Configured to restrict guest access for security.
   -  **2.2 Enable and Configure Firewall**  
     	-  **a. Enable UFW Firewall:**  
-       		-  sudo ufw enable
+       		-  sudo ufw disable
         -  **b. Set Basic Firewall Rules:**  
       		-  Allow SSH, HTTP, and HTTPS traffic:  
           		-  sudo ufw allow ssh  
