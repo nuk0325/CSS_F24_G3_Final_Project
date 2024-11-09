@@ -92,7 +92,7 @@ Joseph Montez: Post-hardening scan and results analysis.
 This project is for academic purposes only and should not be used for any production environment or unauthorized testing.
 
 ## Additional Documentation
-1. Initial Setup Steps: docs/initial-setup/os-setup.md
+1. Initial Setup Steps: docs/initial-setup/initial-os-setup.md
 2. Installed Software List: docs/initial-setup/software-list.md
 3. Configuration Changes: docs/initial-setup/configuration.md
 4. Vulnerability Summary: docs/initial-scan/scan-summary.md
