@@ -7,8 +7,6 @@
        		-  In VirtualBox, created a new VM with the following settings:  
            		-  Type: Linux  
           		-  Version: Ubuntu 24.10 (64-bit)  
-             	-  Memory: 5GB  
-           		-  Storage: 25GB
         - **c. Run the Installation Wizard:**  
       		-  Select New in the boot menu.  
         	 -  Follow the installation wizard, setting up a hostname (Project) and creating a primary user account.(group3)
@@ -34,7 +32,7 @@
      	-  Configured to restrict guest access for security.
   -  **2.2 Enable and Configure Firewall**  
     	-  **a. Enable UFW Firewall:**  
-       		-  sudo ufw disable
+       		-  sudo ufw enable
         -  **b. Set Basic Firewall Rules:**  
       		-  Allow SSH, HTTP, and HTTPS traffic:  
           		-  sudo ufw allow ssh  
