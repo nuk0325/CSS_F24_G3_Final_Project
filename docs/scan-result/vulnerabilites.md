@@ -1,11 +1,11 @@
 # Vulnerabilities
----
 
 ## 1. Apache
 
 
 
 ### * description
+
 
 #### A package running alongside Apache2 has vulnerabilities.
 
@@ -27,6 +27,7 @@ sudo apt install apache2
 
 ### * description
 
+
 #### An outdated version of Node.js installed with npm has vulnerabilities.
 
 ```
@@ -42,6 +43,7 @@ sudo apt install npm -y
 
 ### * description
 
+
 #### Resetting all firewall rules also removes traffic filtering rules related to IP forwarding, creating an environment where network traffic can flow freely.
 
 ```
@@ -56,6 +58,7 @@ sudo iptables -F
 
 
 ### * description
+
 
 #### Disabling the firewall, which filters and limits network traffic, makes it easier for malicious requests to target the DNS server.
 
@@ -79,6 +82,8 @@ sudo ufw disable
 
 
 ### * description
+
+
 #### Disabling the firewall, which filters and limits network traffic, makes it easier for malicious requests to target the DHCP server.
 
 ```
