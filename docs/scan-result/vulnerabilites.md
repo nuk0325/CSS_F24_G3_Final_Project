@@ -96,16 +96,14 @@ sudo ufw disable
 
 
 
-### * description
+* description
 
-
-
-#### Disabling the firewall, which filters and limits network traffic, makes it easier for malicious requests to target the DHCP server.
+  * Disabling the firewall, which filters and limits network traffic, makes it easier for malicious requests to target the DHCP server.
 
 
 
 
-### used command
+* used command
 
 ```
 used command
