@@ -21,7 +21,7 @@
 
 ---
 
-### List the top priorities
+### List the top priorities by CVSS
 #### 1. Apache
 * Cause
   * An outdated version of Apache with known vulnerabilities was downloaded.
@@ -52,25 +52,7 @@
 # example
 echo 0 > /proc/sys/net/ipv4/ip_forward
 ```
-#### 4. Multiple Vendor DNS Response Flooding Denial Of Service
-* Cause
-  * The firewall controlling network traffic was disabled.
-* Impact
-  * An attacker could exploit this vulnerability by spoofing a DNS packet so that it appears to come from 127.0.0.1 and make the remote DNS server enter into an infinite loop, therefore denying service to legitimate users.
-* Solution
-  * Create firewall rules to block attackers generating excessive traffic.
-  * Upgrade the DNS software to the latest version.		
-
-#### 5. DHCP Server Detection
-* Cause
-  * The firewall controlling network traffic was disabled.
-* Impact
-  * A local attacker may use DHCP to become intimately familiar with the associated network because some DHCP servers provide sensitive information such as the NIS domain name, or network layout information such as the list of the network web servers, and so on.
-* Solution
-  * Reconfigure firewall rules to block suspicious IPs.
-  * Update the DHCP software to the latest version.
-
-#### 6. SSL Certificate Cannot Be Trusted
+#### 4. SSL Certificate Cannot Be Trusted
 * Cause
   * A vulnerability was detected in the SSL certificate present in Kali Linux, indicating it is not trusted.
 * Impact
@@ -79,7 +61,16 @@ echo 0 > /proc/sys/net/ipv4/ip_forward
 * Solution
   * Regenerate proper SSL certificates.
 
-#### 7. Intel Media SDK Multiple Vulnerabilities (INTEL-SA-00935)
+#### 5. Multiple Vendor DNS Response Flooding Denial Of Service
+* Cause
+  * The firewall controlling network traffic was disabled.
+* Impact
+  * An attacker could exploit this vulnerability by spoofing a DNS packet so that it appears to come from 127.0.0.1 and make the remote DNS server enter into an infinite loop, therefore denying service to legitimate users.
+* Solution
+  * Create firewall rules to block attackers generating excessive traffic.
+  * Upgrade the DNS software to the latest version.
+ 
+#### 6. Intel Media SDK Multiple Vulnerabilities (INTEL-SA-00935)
 * Cause
   * A vulnerability was detected in the video processing library included by default in Kali Linux.
 * Impact
@@ -90,6 +81,16 @@ echo 0 > /proc/sys/net/ipv4/ip_forward
   * Improper buffer restrictions in Intel Media SDK software all versions may allow an authenticated user to potentially enable denial of service via local access.
 * Solution
   * Since Intel has discontinued support, you should discontinue use of the software or remove it.
+
+#### 7. DHCP Server Detection
+* Cause
+  * The firewall controlling network traffic was disabled.
+* Impact
+  * A local attacker may use DHCP to become intimately familiar with the associated network because some DHCP servers provide sensitive information such as the NIS domain name, or network layout information such as the list of the network web servers, and so on.
+* Solution
+  * Reconfigure firewall rules to block suspicious IPs.
+  * Update the DHCP software to the latest version.
+
 
 
 
