@@ -1,0 +1,10 @@
+20, 21 (FTP) - File Transfer Protocol (unless you specifically use it).
+23 (Telnet) - Unencrypted remote access (replaced by SSH).
+25 (SMTP) - Mail transfer (close if you’re not running a mail server).
+69 (TFTP) - Trivial File Transfer Protocol (rarely used).
+110 (POP3) - Older mail protocol (if not needed).
+137-139, 445 (NetBIOS/SMB) - File sharing on Windows networks.
+143 (IMAP) - Another mail protocol (close if unused).
+512-514 (rlogin/rsh) - Remote access services (obsolete).
+3306 (MySQL) - If MySQL is not required or should only be locally accessible.
+3389 (RDP) - Remote Desktop Protocol (if not using RDP).

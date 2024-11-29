@@ -1,0 +1,45 @@
+To Install the vulnerability patched ssh server 9.8p1 on Ubuntu: download it:
+
+wget https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
+
+Remove the existing install:
+
+sudo systemctl stop sshd sudo apt-get remove openssh-server openssh-client
+
+Install the build tools:
+
+sudo apt update
+
+sudo apt install -y build-essential zlib1g-dev libssl-dev libpam0g-dev libselinux1-dev libwrap0-dev libedit-dev libbsd-dev autoconf automake libtool pkg-config wget curl git
+
+Untar it, build it:
+
+tar zxvf openssh-9.8p1.tar.gz
+
+cd openssh-9.8p1
+
+./configure
+
+make
+
+sudo make install
+
+Setup the service:
+
+sudo nano /etc/systemd/system/sshd.service
+
+Paste this into the file: [Unit] Description=OpenSSH server daemon After=network.target
+
+[Service] ExecStart=/usr/local/sbin/sshd -D ExecReload=/bin/kill -HUP $MAINPID KillMode=process Restart=on-failure
+
+[Install] WantedBy=multi-user.target Save and close (ctrl+x y enter)
+
+Reload the daemon, start and enable the service:
+
+sudo systemctl daemon-reload sudo systemctl start sshd sudo systemctl enable sshd
+
+Now I had problems at this point, but all I needed to do was unmask ssh:
+
+sudo systemctl unmask ssh
+
+Then repeat the daemon-reload, start and enable Check the status: sudo systemctl status sshd

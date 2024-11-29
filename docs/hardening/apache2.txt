@@ -1,0 +1,9 @@
+This functionality comes from a standard module called status and so you can simply disable that module to remove the /server-status endpoint.
+
+On a Debian-based server, that means running:
+
+a2dismod status
+and then restarting the web server:
+
+apache2ctl configtest
+systemctl restart apache2.service
