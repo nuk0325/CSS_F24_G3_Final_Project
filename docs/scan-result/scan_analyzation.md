@@ -54,7 +54,7 @@ echo 0 > /proc/sys/net/ipv4/ip_forward
 ```
 #### 4. SSL Certificate Cannot Be Trusted
 * Cause
-  * A vulnerability was detected in the SSL certificate present in Kali Linux, indicating it is not trusted.
+  * A vulnerability was detected in the SSL certificate present in the OS, indicating it is not trusted.
 * Impact
   * HTTPS communication is not guaranteed, making the system vulnerable to man-in-the-middle (MITM) attacks.
   * Increased risk of connecting to malicious software updates, phishing sites, or fake servers.
@@ -72,7 +72,7 @@ echo 0 > /proc/sys/net/ipv4/ip_forward
  
 #### 6. Intel Media SDK Multiple Vulnerabilities (INTEL-SA-00935)
 * Cause
-  * A vulnerability was detected in the video processing library included by default in Kali Linux.
+  * A vulnerability was detected in the video processing library included by default in the OS.
 * Impact
   * Improper input validation in Intel Media SDK software all versions may allow an authenticated user to potentially enable denial of service via local access.
   * Improper buffer restrictions in Intel Media SDK all versions may allow an authenticated user to potentially enable escalation of privilege via local access.
