@@ -49,15 +49,15 @@ ip address
 #### 2. Vulnerabilities
 
 * Node.js
-  * A vulnerability was detected in the Node.js version included by default in Kali Linux. It may be an outdated version or a specific version maintained for OS stability, which can result in vulnerabilities being present.
+  * A vulnerability was detected in the Node.js version included by default in the OS. It may be an outdated version or a specific version maintained for OS stability, which can result in vulnerabilities being present.
 
 * SSL
-  * A vulnerability was detected in the SSL certificate present in Kali Linux, indicating it is not trusted. If the certificate is issued by the server itself, Nessus may classify it as untrusted.
+  * A vulnerability was detected in the SSL certificate present in the OS, indicating it is not trusted. If the certificate is issued by the server itself, Nessus may classify it as untrusted.
 
 * Intel Media SDK
-  * A vulnerability was detected in the video processing library included by default in Kali Linux. It may be an outdated version that has not been updated to the latest release.
+  * A vulnerability was detected in the video processing library included by default in the OS. It might be an outdated version that has not been updated to the latest release.
 
 * OpenJDK 8
-  * A vulnerability was detected in the OpenJDK included in the default Java runtime environment of Kali Linux. This can occur if it has not been updated to the latest version.
+  * A vulnerability was detected in the OpenJDK included in the default Java runtime environment of the OS. This can occur if it has not been updated to the latest version.
 
 
