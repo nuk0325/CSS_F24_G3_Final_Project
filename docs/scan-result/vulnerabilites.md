@@ -28,7 +28,7 @@ sudo apt install apache2
 
 * description
 
-  * The Node.js version included by default in Kali Linux has vulnerabilities.
+  * The Node.js version included by default in the OS has vulnerabilities.
   
   * An outdated version of Node.js installed with npm has vulnerabilities.
 
